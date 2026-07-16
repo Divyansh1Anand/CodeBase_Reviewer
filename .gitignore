@@ -19,3 +19,5 @@ chroma/
 Thumbs.db
 tests/
 src/test_output.txt
+context.md
+.claude/
