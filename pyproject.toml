@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "codebase-reviewer"
+version = "0.0.1"
+description = "Prompt-driven codebase reviewer (RAG over code)."
+requires-python = ">=3.10"
+dependencies = [
+    "tree-sitter",
+    "tree-sitter-javascript",
+    "tree-sitter-typescript",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/codebase_reviewer"]
